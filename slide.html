@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideToggle("1000");
+            });
+        });
+    </script>
+    <style>
+        #flip, #panel{
+            padding:10px;
+            text-align: center;
+            text-decoration-color: rgb(48, 45, 182);
+            background-color: rgb(180, 130, 214);
+            border: solid 2px rgba(78, 39, 110, 0.671);
+        }
+        #panel{
+            padding: 50px;
+            /* display: none; */
+        }
+    </style>
+</head>
+<body>
+    <h1>THE SLIDE DOWN PANEL</h1>
+    <div id="flip">Click to slide down pannel!!!!!</div>
+    <div id="panel">HELLO WORLD:))</div>
+</body>
+</html>
